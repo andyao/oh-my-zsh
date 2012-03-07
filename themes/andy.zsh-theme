@@ -12,7 +12,7 @@ else
   fi
 fi
 
-local git_branch='$(git_prompt_info)%{$reset_color%}'
+local git_branch='$(git_prompt_info)$(git_prompt_ahead)'
 
 PROMPT="
 %{$fg[grey]%}╭─[%W %*${rvm_ruby}] in%{$reset_color%}${current_dir} ${git_branch}
